@@ -1,0 +1,54 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #e7f0ff 0%, #f8fbff 100%);
+  color: #1e3a5f;
+  text-align: center;
+  padding: 50px 20px;
+  line-height: 1.6;
+}
+
+.fancy-title {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 40px;
+  text-shadow: 0 0 6px rgba(0, 51, 102, 0.2);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.tab {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  background: #ffffff;
+  border: 2px solid #0059b3;
+  border-radius: 10px;
+  padding: 25px 50px;
+  font-size: 1.2rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+}
+
+.tab:hover {
+  background: #0059b3;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
+}
+
+.tab.active {
+  background: #0059b3;
+  color: #ffffff;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 60px;
+}
